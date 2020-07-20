@@ -1,0 +1,45 @@
+<html>
+	<body>
+		{% include "mibarra.html" %}
+
+
+		<h2 style="color: red;">
+		Hola Mundo desde Django mi primera plantilla
+		</h2>
+		{% comment %}
+			Se innora esta parte porque es un comentario 
+			de mas linea
+		{% endcomment %}
+		{# Se innora esta parte es un comentario de una linea #}
+
+
+
+		{% if nombre_persona == "Enrique" %}
+
+		<p>El Curso Lo Ve Enrique dedes Youtube</p>
+		
+		{% else %}
+
+		<p>El Curso no lo ve Enrique</p>
+
+		{% endif %}
+
+
+
+		<p>Mi nombre es: {{nombre_persona|upper}} {{apellido_persona|lower}}</p>
+		<p>estamos viendo el temas de la platilla a dia: {{fecha.day}}/{{fecha.month}}/{{fecha.year}}</p>
+		<p><strong>Tema del Curso</strong></p>
+		<ul>
+			{% if temas %}				
+				{% for elTema in temas %}
+
+				<li><p>{{elTema|first|lower}}</p></li>
+
+				{% endfor %}
+
+			{% else %}
+				<p>No Ay Elementos q mostrar</p>
+			{% endif %}
+		</ul>		
+	</body>
+</html>
