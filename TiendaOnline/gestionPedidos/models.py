@@ -8,7 +8,7 @@ from django.db import models
 class Clientes(models.Model):
 	nombre=models.CharField(max_length=30)
 	direccion=models.CharField(max_length=50)
-	email=models.EmailField()
+	email=models.EmailField(blank=True,null=True)
 	tlno=models.CharField(max_length=7)
 
 """Clase de Articulos"""
