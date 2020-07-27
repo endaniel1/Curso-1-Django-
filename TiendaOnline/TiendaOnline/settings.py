@@ -129,3 +129,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+#Configuracion par ael envio de Email
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'#smtp a utilizar
+EMAIL_USE_TLS = True #TLS
+EMAIL_PORT = 587 #EL PUERTO
+EMAIL_HOST_USER = ''#Aqui va el nombre de correo electronico
+EMAIL_HOST_PASSWORD = ''#Aqui va la contraseña del mismo
+#Toda esta configuracion no va a servir sino habilitamos el Acceso de aplicaciones poco seguras en nuestro correo 

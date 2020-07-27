@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Formulario Contacto</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+
+	<h3>Formulario de Contacto</h3>
+	{% if form.errors %}
+		<p style="color: red;"> Revisar los campos</p>
+	{% endif %}
+
+	<form action="" method="post" accept-charset="utf-8">
+		{% csrf_token %}
+		<table>
+			{{form.as_table}}
+		</table>
+		<button type="submit" value="Enviar">Enviar</button>		
+	</form>
+	
+</body>
+</html>
