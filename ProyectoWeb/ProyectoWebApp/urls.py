@@ -7,7 +7,6 @@ from django.conf.urls.static import static #para las url estaticas
 urlpatterns = [
     path('', views.home, name="Home"),
     path('shop', views.shop, name="Shop"),
-    path('blog', views.blog, name="Blog"),
     path('contact', views.contact, name="Contact"),
 ]
 #Aqui registramo q este concadenado la rutas de nuestras imagenes

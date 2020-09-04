@@ -11,10 +11,6 @@ def shop(request):
 	
 	return render(request, "ProyectoWebApp/shop.html") 
 
-def blog(request):
-	
-	return render(request, "ProyectoWebApp/blog.html")
-
 def contact(request):
 	
 	return render(request, "ProyectoWebApp/contact.html")
