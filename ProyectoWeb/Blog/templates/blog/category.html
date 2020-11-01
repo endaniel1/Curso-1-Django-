@@ -16,7 +16,7 @@
 			    			<div style="width: 75%; margin: inherit; text-align: left; color: white;">
 			        		Categorias: 
 			        		{% for category in post.categories.all%}
-			        			{{category.name}}
+			        			<a href="{% url 'Category' category.id %}" class="linkCategory" title="">{{category.name}}</a>
 			        		{% endfor %}
 			        	</div>
 			        	<div style="text-align: left; font-size: 0.8em">
