@@ -20,5 +20,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('ProyectoWebApp.urls')), #incluimos la rutas de nuestra ProyectoWebApp
     path('services/', include('servicios.urls')), #incluimos la rutas de nuestra servicios
-    path('blog/', include('blog.urls')), #incluimos la rutas de nuestra servicios
+    path('blog/', include('blog.urls')), #incluimos la rutas de nuestra blog
+    path('contact/', include('contacto.urls')), #incluimos la rutas de nuestra contacto
 ]
