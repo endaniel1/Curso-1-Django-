@@ -127,3 +127,15 @@ STATIC_URL = '/static/'
 #Aqui para nuestros archivo media
 MEDIA_URL = '/media/' #ruta
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media') #directorio
+
+
+#Configuracion para el envio de Email
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'#smtp a utilizar host a utilizar
+EMAIL_USE_TLS = True #TLS
+EMAIL_PORT = 587 #EL PUERTO
+EMAIL_HOST_USER = ''#Aqui va el nombre de correo electronico
+EMAIL_HOST_PASSWORD = ''#Aqui va la contraseña del mismo
+#Toda esta configuracion no va a servir sino habilitamos 
+#el Acceso de aplicaciones poco seguras en nuestro correo 
+
