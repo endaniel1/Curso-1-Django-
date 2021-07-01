@@ -22,6 +22,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '_4hg)c4$ef$*ijhpbqi(ass%)(&!v8g1jaw8on5jvl#nn617jx'
 
+DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
@@ -39,8 +41,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     "ProyectoWebApp",
     "servicios",
-    "blog",
+    "Blog",
     "contacto",
+    "shop",
 ]
 
 MIDDLEWARE = [
