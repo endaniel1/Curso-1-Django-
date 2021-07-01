@@ -1,7 +1,11 @@
 from django.shortcuts import render
+from .models import Products, CategoryProd
 
 # Create your views here.
 
 def shop(request):
-	
-	return render(request, "shop/shop.html") 
+	products = Products.objects.all()
+
+	return render(request, "shop/shop.html", {
+		"products": products
+	}) 
